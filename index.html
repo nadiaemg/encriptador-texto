@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador - Alura</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+
+    <header>
+        <img src="./img/logo.png" alt="Logo de Alura">
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <section>
+            <textarea name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí" class="contenedor-formato" autocomplete="off"></textarea>
+            <div class="contenedor-botones">
+                <button type="button" class="boton boton-oscuro">Encriptar</button>
+                <button type="button" class="boton boton-claro">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-encriptado contenedor-formato">
+            <div class="contendor-encriptado-lleno" style="display: none;">
+                <p class="textoEncriptado"></p>
+                <button type="button" class="boton boton-blanco"><i class="bi bi-copy"></i> Copiar</button>
+            </div>
+            <div class="contendor-encriptado-vacio">
+                <img class="astronauta" src="./img/astronauta.png" alt="No hay mensaje">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; <span id="year"></span> -  Desarrollado por
+            <a href="https://nadiaemg.github.io/" target="_blank" rel="noopener noreferrer"
+              title="Portafolio nadiaemg">nadiaemg</a> - Challenge Alura / Oracle - ONE Next Education
+          </p>
+    </footer>
 
       <script src="./main.js"></script>
 </body>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0A3871;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F3F5FC;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 7.6rem;
+    text-align: center;
+    width: 100%;
+    font-size: 3.2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    padding: 0 2.5rem;
+}
+
+.contenedor-formato {
+    min-height: 20rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    box-shadow:  10px 15px 30px rgba(0, 0, 0, 0.24);
+}
+
+.contenedor-encriptado {
+    background-color: #FFFFFF;
+}
+
+textarea::placeholder {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+textarea:focus,
+a:focus,
+.boton:focus {
+    border: solid 2px #0A3871;
+    outline: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+textarea,
+.contendor-encriptado-lleno {
+    font-family: "Play", sans-serif;
+    font-size: 2rem;
+    padding: 2.5rem;
+    background-color: transparent;
+}
+
+.contendor-encriptado-lleno {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contendor-encriptado-vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5rem 0;
+    text-align: center;
+    background-image: url(https://media.tenor.com/OeqA-TcLOQcAAAAi/stars-twinkle.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15rem 15rem;
+}
+
+.contendor-encriptado-vacio p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.astronauta {
+    height: 21rem;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-50px) rotate(-700deg);
+    }
+}
+
+.astronauta:hover {
+    animation: float 30s ease-in-out infinite;
+}
+
+.contenedor-botones {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2.5rem;
+}
+
+.boton {
+    border-radius: 1.5rem;
+    border: solid 1px #0A3871;
+    font-size: 1.5rem;
+    font-family: "Chakra Petch", sans-serif;
+    height: 4rem;
+    width: 18.75rem;
+}
+.boton-oscuro {
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+.boton-oscuro:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+
+.boton-claro {
+    background-color: #D8DFE8;
+}
+
+.boton-claro:hover,
+.boton-blanco:hover {
+    background-color: #0A3871;
+    color: #D8DFE8;
+}
+
+
+.boton-blanco {
+    background-color: #FFFFFF;
+    align-self: flex-end;
+    margin-top: 2.5rem;
+}
+
+footer {
+    padding: 2.5rem;
+}
