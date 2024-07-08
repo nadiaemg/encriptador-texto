@@ -13,31 +13,34 @@
         <img src="./img/logo.png" alt="Logo de Alura">
         <h1>Encriptador de texto</h1>
     </header>
+
     <main>
-        <section>
-            <textarea name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí" class="contenedor-formato" autocomplete="off"></textarea>
-            <div class="contenedor-botones">
-                <button type="button" class="boton boton-oscuro">Encriptar</button>
-                <button type="button" class="boton boton-claro">Desencriptar</button>
+        <section class="contenedor__encriptar">
+            <textarea name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí" class="contenedores__texto contenedores__formato" autocomplete="off"></textarea>
+            <div class="contenedor__botones">
+                <button type="button" class="boton boton__oscuro">Encriptar</button>
+                <button type="button" class="boton boton__claro">Desencriptar</button>
             </div>
         </section>
-        <section class="contenedor-encriptado contenedor-formato">
-            <div class="contendor-encriptado-lleno" style="display: none;">
-                <p class="textoEncriptado"></p>
-                <button type="button" class="boton boton-blanco"><i class="bi bi-copy"></i> Copiar</button>
-            </div>
-            <div class="contendor-encriptado-vacio">
+
+        <section class="contenedor__encriptado contenedores__formato">
+            <div class="contendor__encriptado__vacio">
                 <img class="astronauta" src="./img/astronauta.png" alt="No hay mensaje">
                 <p>Ningún mensaje fue encontrado</p>
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <div class="contendor__encriptado__lleno contenedores__texto" style="display: none;">
+                <p id="textoEncriptado"></p>
+                <button type="button" class="boton boton__blanco"><i class="bi bi-copy"></i> Copiar</button>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>
-            Copyright &copy; <span id="year"></span> -  Desarrollado por
+            &copy; <span id="year"></span> -  Desarrollado por
             <a href="https://nadiaemg.github.io/" target="_blank" rel="noopener noreferrer"
-              title="Portafolio nadiaemg">nadiaemg</a> - Challenge Alura / Oracle - ONE Next Education
+              title="Portafolio nadiaemg">nadiaemg</a> - Oracle ONE Next Education / Alura Challenge
           </p>
     </footer>
 
