@@ -16,10 +16,11 @@
 
     <main>
         <section class="contenedor__encriptar">
-            <textarea name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí" class="contenedores__texto contenedores__formato" autocomplete="off"></textarea>
+            <textarea name="textoIngresado" id="textoIngresado" placeholder="Ingrese el texto aquí" class="contenedores__texto contenedores__formato" autocomplete="off" maxlength="1000"></textarea>
+            <p><i class="bi bi-info-circle-fill"></i> Solo letras minúsculas y sin acentos</p>
             <div class="contenedor__botones">
-                <button type="button" class="boton boton__oscuro">Encriptar</button>
-                <button type="button" class="boton boton__claro">Desencriptar</button>
+                <button type="button" class="boton boton__encriptar" title="Clic para encriptar" onclick="mostrarEncriptacion();">Encriptar</button>
+                <button type="button" class="boton boton__desencriptar" title="Clic para desencriptar" onclick="mostrarDesencriptacion();">Desencriptar</button>
             </div>
         </section>
 
@@ -31,7 +32,7 @@
             </div>
             <div class="contendor__encriptado__lleno contenedores__texto" style="display: none;">
                 <p id="textoEncriptado"></p>
-                <button type="button" class="boton boton__blanco"><i class="bi bi-copy"></i> Copiar</button>
+                <button type="button" class="boton boton__copiar" title="Clic para copiar"><i class="bi bi-copy"></i> Copiar</button>
             </div>
         </section>
     </main>

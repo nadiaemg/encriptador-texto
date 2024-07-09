@@ -63,8 +63,10 @@ main {
 
 /*Contenedor a encriptar*/
 
-.contenedor__encriptado {
-    background-color: #FFFFFF;
+.contenedor__encriptar p {
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    text-align: end;
 }
 
 textarea {
@@ -110,6 +112,10 @@ textarea::-webkit-scrollbar-thumb:active{
 
 /*Contenedor encriptado*/
 
+.contenedor__encriptado {
+    background-color: #FFFFFF;
+}
+
 .contendor__encriptado__lleno {
     display: flex;
     flex-direction: column;
@@ -126,7 +132,7 @@ textarea::-webkit-scrollbar-thumb:active{
     background-repeat: no-repeat;
     background-size: 15rem 15rem;
     justify-content: center;
-    padding: 5.5rem 0;
+    padding: 5.5rem 1rem;
     text-align: center;
 }
 
@@ -144,10 +150,10 @@ textarea::-webkit-scrollbar-thumb:active{
 
 @keyframes float {
     0%, 100% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateX(0) translateY(0) rotate(0deg);
     }
     50% {
-        transform: translateY(-50px) rotate(-700deg);
+        transform: translateX(-50px) translateY(-50px) rotate(-540deg);
     }
 }
 
@@ -188,34 +194,34 @@ a:hover {
     width: 18.75rem;
 }
 
-.boton__claro {
+.boton__desencriptar {
     background-color: #D8DFE8;
 }
 
-.boton__oscuro {
+.boton__encriptar {
     background-color: #0A3871;
     color: #F3F5FC;
 }
 
-.boton__claro:hover,
-.boton__oscuro:hover {
+.boton__desencriptar:hover,
+.boton__encriptar:hover {
     background-color: #FFFFFF;
     color: #0A3871;
     border: solid 2px #0A3871;
 }
 
-.boton__blanco {
+.boton__copiar {
     align-self: flex-end;
     background-color: #FFFFFF;
     margin-top: 2.5rem;
 }
 
-.boton__blanco:hover {
+.boton__copiar:hover {
     background-color: #0A3871;
     color: #D8DFE8;
 }
 
-.boton__blanco:hover .bi {
+.boton__copiar:hover .bi {
     color: #D8DFE8;
 }
 
@@ -258,7 +264,6 @@ a:hover {
     /*Main*/
     .contenedores__texto {
         font-size: 1.4rem;
-        padding: 1rem;
     }
 
     textarea::placeholder {
@@ -273,6 +278,10 @@ a:hover {
         background: none;
     }
 
+    .contendor__encriptado__lleno {
+        min-height: 20rem;
+    }
+
     .astronauta {
         display: none;
     }
@@ -284,8 +293,9 @@ a:hover {
         justify-content: center;
     }
 
-    .boton__blanco {
+    .boton__copiar {
         align-self: center;
+        justify-self: end;
         margin-top: 1rem;
     }
 }
